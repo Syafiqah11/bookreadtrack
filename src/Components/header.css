@@ -36,3 +36,10 @@ nav > .menu-li ul li a {
   text-decoration: none;
   color: lightgoldenrodyellow;
 }
+
+.menu-li ul li a:hover {
+  border-bottom: 0.2rem solid #fafbf6e3;
+  font-size: 22px;
+  color: #ff5858d5;
+  transition: 0.2s ease-in-out;
+}
