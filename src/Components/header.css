@@ -13,7 +13,7 @@ nav {
 
 nav > .branding {
   color: lightgoldenrodyellow;
-  font-size: 1.4rem;
+  font-size: 1rem;
 }
 
 nav > .menu-li {
@@ -30,9 +30,21 @@ nav > .menu-li ul {
 nav > .menu-li ul li {
   font-weight: bold;
   width: 150px;
+  align-self: center;
 }
 
 nav > .menu-li ul li a {
   text-decoration: none;
   color: lightgoldenrodyellow;
+}
+
+nav > .menu-li ul li button {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+}
+
+nav > .menu-li ul li button a {
+  font-weight: bold;
+  color: black;
 }

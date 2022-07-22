@@ -1,4 +1,5 @@
 import React from "react";
+import MyListDetail from "./MyListDetail/MyListDetail";
 
 const img_arr = [
   {
@@ -72,6 +73,12 @@ export default class MyList extends React.Component {
       <>
         <div className="main-container">
           <div className="top-head"></div>
+          <div className="mylist-container">
+            <div>
+              <MyListDetail />
+            </div>
+          </div>
+
           <div className="mylist-container">
             <h2>Continue Reading...</h2>
             {img_arr.map(({ id, src, title, description }) => (

@@ -66,18 +66,38 @@ export default class Home extends React.Component {
       <>
         <div className="main-container">
           <div className="top">
-            <div className="branding">Book Read Tracker</div>
+            <div className="head-branding">Book Read Tracker</div>
           </div>
+
           <div className="top-container">
-            <h2>Continue Reading...</h2>
-            {img_arr.map(({ id, src, title, description }) => (
-              <img key={id} src={src} title={title} alt={description} />
-            ))}
+            <h2>CONTINUE READING...</h2>
+            <div className="book-display">
+              {img_arr.map(({ id, src, title, description }) => (
+                <div>
+                  <img key={id} src={src} title={title} alt={description} />
+                  <div className="book-detail">
+                    <label>
+                      <h3>{title}</h3>
+                    </label>
+                    <label>
+                      <h5>( {description} )</h5>
+                    </label>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
 
           <div className="top-container">
             <h2>TOP 5 BOOKS.</h2>
             {img_arr2.map(({ id, src, title, description }) => (
+              <img key={id} src={src} title={title} alt={description} />
+            ))}
+          </div>
+
+          <div className="top-container">
+            <h2>WISHLIST</h2>
+            {img_arr.map(({ id, src, title, description }) => (
               <img key={id} src={src} title={title} alt={description} />
             ))}
           </div>
