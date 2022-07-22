@@ -81,9 +81,7 @@ export default class MyList extends React.Component {
           </div>
 
           <div className="mylist-container">
-            <div>
-              <BookCrud />
-            </div>
+            <div>{/* <BookCrud /> */}</div>
           </div>
 
           {/* <div className="mylist-container">
