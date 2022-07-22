@@ -48,3 +48,16 @@ nav > .menu-li ul li button a {
   font-weight: bold;
   color: black;
 }
+
+nav > .menu-li ul li a:hover {
+  border-bottom: 0.2rem solid #fafbf6e3;
+  font-size: 22px;
+  color: brown;
+  transition: 0.2s ease-in-out;
+}
+
+nav > .menu-li ul li button {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+}
