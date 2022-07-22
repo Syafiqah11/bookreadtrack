@@ -15,11 +15,47 @@
 .edit {
   margin-right: 10px;
 }
-table {
+
+.mb-3 {
+  justify-content: center;
+}
+
+.p-4 .mb-3 {
   padding-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
   width: 100%;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+input {
+  padding: 6px 10px;
+  justify-content: flex-start;
+}
+
+.mb-3 button {
+  padding: 6px 10px;
+}
+
+button {
+  padding: 6px 8px;
+  width: 200px;
+}
+
+.mb-2 {
+  padding-bottom: 30px;
+}
+
+.mb-2 button {
+  padding-bottom: 30px;
+  margin-top: 10px;
+  padding: 6px 8px;
+  width: 200px;
+}
+
+table {
+  padding-top: 10px;
   text-align: center;
   font-size: 20px;
+  color: #fff;
 }

@@ -1,4 +1,4 @@
-import { Button, Table } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 import React, { useEffect, useState } from "react";
 
 import BookDataService from "./services/book.services";
@@ -28,7 +28,7 @@ const BookAll = ({ getBookId }) => {
       </div>
 
       {/* <pre>{JSON.stringify(books, undefined, 2)}</pre>} */}
-      <Table striped bordered hover size="sm">
+      <table>
         <thead>
           <tr>
             <th>#</th>
@@ -69,7 +69,7 @@ const BookAll = ({ getBookId }) => {
             );
           })}
         </tbody>
-      </Table>
+      </table>
     </>
   );
 };

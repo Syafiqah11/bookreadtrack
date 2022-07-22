@@ -68,7 +68,7 @@ const AddBook = ({ id, setBookId }) => {
   }, [id]);
   return (
     <>
-      <div className="p-4 box">
+      <div className="p-4">
         {/* {message?.msg && (
           <Alert
             variant={message?.error ? "danger" : "success"}
@@ -82,7 +82,7 @@ const AddBook = ({ id, setBookId }) => {
         <Form onSubmit={handleSubmit}>
           <Form.Group className="mb-3" controlId="formBookTitle">
             <InputGroup>
-              <InputGroup.Text id="formBookTitle">B</InputGroup.Text>
+              <InputGroup.Text id="formBookTitle">Title: </InputGroup.Text>
               <Form.Control
                 type="text"
                 placeholder="Book Title"
@@ -94,7 +94,7 @@ const AddBook = ({ id, setBookId }) => {
 
           <Form.Group className="mb-3" controlId="formBookAuthor">
             <InputGroup>
-              <InputGroup.Text id="formBookAuthor">A</InputGroup.Text>
+              <InputGroup.Text id="formBookAuthor">Author: </InputGroup.Text>
               <Form.Control
                 type="text"
                 placeholder="Book Author"
@@ -106,7 +106,7 @@ const AddBook = ({ id, setBookId }) => {
 
           <Form.Group className="mb-3" controlId="formBookChapter">
             <InputGroup>
-              <InputGroup.Text id="formBookChapter">A</InputGroup.Text>
+              <InputGroup.Text id="formBookChapter">Chapter: </InputGroup.Text>
               <Form.Control
                 type="text"
                 placeholder="Book Chapter"
@@ -118,10 +118,10 @@ const AddBook = ({ id, setBookId }) => {
 
           <Form.Group className="mb-3" controlId="formBookPageCount">
             <InputGroup>
-              <InputGroup.Text id="formBookPageCount">A</InputGroup.Text>
+              <InputGroup.Text id="formBookPageCount">Page: </InputGroup.Text>
               <Form.Control
                 type="text"
-                placeholder="Book Page Count"
+                placeholder="Book Page Number"
                 value={pagecount}
                 onChange={(e) => setPageCount(e.target.value)}
               />
@@ -150,7 +150,7 @@ const AddBook = ({ id, setBookId }) => {
               Not Completed
             </Button>
           </ButtonGroup>
-          <div className="d-grid gap-2">
+          <div className="view-button">
             <Button variant="primary" type="Submit">
               Add/ Update
             </Button>
