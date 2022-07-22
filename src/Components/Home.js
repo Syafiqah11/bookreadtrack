@@ -93,7 +93,7 @@ export default class Home extends React.Component {
       <>
         <div className="main-container">
           <div className="top">
-            <div className="head-branding">Book Read Tracker</div>
+            <div className="animated">Book Read Tracker</div>
           </div>
 
           <div className="top-container">
