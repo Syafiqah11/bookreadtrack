@@ -18,11 +18,11 @@ const Header = ({ handleLogout }) => {
             <li>
               <Link to="/mylist">My List</Link>
             </li>
-            <li>
+            {/* <li>
               <button onClick={() => handleLogout()}>
                 <Link to="/">Logout</Link>
               </button>
-            </li>
+            </li> */}
           </ul>
         </div>
       </nav>

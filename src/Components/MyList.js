@@ -1,5 +1,6 @@
 import React from "react";
 import MyListDetail from "./MyListDetail/MyListDetail";
+import BookCrud from "./MyListDetail/BookCRUD/BookCrud";
 
 const img_arr = [
   {
@@ -80,6 +81,10 @@ export default class MyList extends React.Component {
           </div>
 
           <div className="mylist-container">
+            <div>{/* <BookCrud /> */}</div>
+          </div>
+
+          {/* <div className="mylist-container">
             <h2>Continue Reading...</h2>
             {img_arr.map(({ id, src, title, description }) => (
               <img key={id} src={src} title={title} alt={description} />
@@ -91,7 +96,7 @@ export default class MyList extends React.Component {
             {img_arr3.map(({ id, src, title, description }) => (
               <img key={id} src={src} title={title} alt={description} />
             ))}
-          </div>
+          </div> */}
         </div>
       </>
     );

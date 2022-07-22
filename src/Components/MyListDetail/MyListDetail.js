@@ -52,9 +52,9 @@ export const MyListDetail = () => {
 
   return (
     <div className="wrapper">
-      <h2>BookList App</h2>
-      <h4>Add and view your books reading track</h4>
-      <div className="main">
+      <h2>Add and view your books reading track</h2>
+      {/* <h4>Add and view your books reading track</h4> */}
+      <div className="formview-container">
         <div className="form-container">
           <form
             autoComplete="off"
@@ -79,7 +79,7 @@ export const MyListDetail = () => {
               value={author}
             ></input>
             <br></br>
-            <label>Page Count</label>
+            <label>Page(s)</label>
             <input
               type="text"
               className="form-control"
@@ -101,9 +101,9 @@ export const MyListDetail = () => {
                 <table className="table">
                   <thead>
                     <tr>
-                      <th>Page Count</th>
                       <th>Title</th>
                       <th>Author</th>
+                      <th>Page(s)</th>
                       <th>Delete</th>
                     </tr>
                   </thead>
