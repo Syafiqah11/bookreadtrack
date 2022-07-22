@@ -73,7 +73,7 @@ export default class MyList extends React.Component {
     return (
       <>
         <div className="main-container">
-          <div className="top-head"></div>
+          <div className="top-head top"></div>
           <div className="mylist-container">
             <div>
               <MyListDetail />
